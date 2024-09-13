@@ -13,7 +13,7 @@ Comments in this script are also in French...
 I used PowerShell and Task Scheduler or System Agent. And I'm running XAMPP for MySQL.
 
 ### The backups should have this name : db_dump_day_month_year_hours_minutes_seconds
-Done. This variable, in the script, generates the name of the backups
+Done. This variable, in the script, generates the name of the backups :
 ```
 $BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql"
 ```
