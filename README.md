@@ -5,6 +5,8 @@ The script itself is mostly based using this [Quora article](https://www.quora.c
 
 There should be soon a technical documentation (in French sadly) explaning how the script works, if I'm not lazy and if I don't forget. 
 
+Comments in this script are also in French...
+
 ## Objective
 Automate a backup of 3 DBs using any programming language and any automation app.
 
