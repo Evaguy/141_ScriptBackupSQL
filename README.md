@@ -10,7 +10,7 @@ Comments in this script are also in French...
 ## Objective
 Automate a backup of 3 DBs using any programming language and any automation app.
 
-I used PowerShell and Task Scheduler or System Agent. And I'm running XAMPP.
+I used PowerShell and Task Scheduler or System Agent. And I'm running XAMPP for MySQL.
 
 ## TODO 
 - Perphaps chaning the comments so that they're more "readable" and more "understandable"
