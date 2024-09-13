@@ -11,5 +11,4 @@ Automate a backup of 3 DBs using any programming language and any automation app
 I used PowerShell and Task Scheduler or System Agent. And I'm running XAMPP.
 
 ## TODO 
-- Add the ps1 script to this repo
 - Finsish and add the technical documentation
