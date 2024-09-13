@@ -10,7 +10,7 @@ Comments in this script are also in French...
 ## Objectives
 ### Automate a backup of 3 DBs using any programming language and any automation app.
 
-I used PowerShell and Task Scheduler or System Agent. And I'm running XAMPP for MySQL.
+I used PowerShell ~~and Task Scheduler or System Agent~~ We can code the automation directly into the script, so consider this as a 100% PowerShell project hihi -w-. And I'm running XAMPP for MySQL.
 
 ### The backups should have this name : db_dump_day_month_year_hours_minutes_seconds
 Done. This variable, in the script, generates the name of the backups :
