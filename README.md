@@ -19,8 +19,12 @@ $BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql"
 ```
 
 ### The backups needs to be happening, at least, every 30 seconds or faster.
-TODO in Task Scheduler or System Agent... Not related to the script but worth writing in here .w.
+~~TODO in Task Scheduler or System Agent... Not related to the script but worth writing in here .w.~~
+Nope, we can code this in the program itself lol.
+
+I'll try to understand a little bit more the "while" statement later. But I already have a super idea on how the automation will be implemented owo. 
 
 ## TODO 
+- Add the automation process in the script
 - Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
 - Finish and add the technical documentation
