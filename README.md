@@ -7,10 +7,19 @@ There should be a technical documentation soon (in French sadly) explaning how t
 
 Comments in this script are also in French...
 
-## Objective
+## Objectives
 ### Automate a backup of 3 DBs using any programming language and any automation app.
 
 I used PowerShell and Task Scheduler or System Agent. And I'm running XAMPP for MySQL.
+
+### The backups should have this name : db_dump_day_month_year_hours_minutes_seconds
+Done. This variable, in the script, creates the name of the backups
+```
+$BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql"
+```
+
+### The backups needs to be happening, at least, every 30 seconds or faster.
+TODO in Task Scheduler or System Agent... Not related to the script but worth writing in here .w.
 
 ## TODO 
 - Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
