@@ -21,11 +21,17 @@ $BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql"
 ### The backups needs to be happening, at least, every 30 seconds or faster.
 ~~TODO in Task Scheduler or System Agent... Not related to the script but worth writing in here .w.~~
 
-Nope, we can code this in the program itself lol.
-
-I'll try to understand a little bit more the "while" statement later. But I already have a super idea on how the automation will be implemented owo. 
+Nope, we can code this in the program itself lol. This is how i did it
+```
+while ($true) {
+    $BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql" 
+    & $mysqldumpPath -u $User --databases $DB_sakila $DB_world $DB_menagerie | Out-File "$Backupfolder\$BackupFileName"
+    Write-Host "Le $BackupFilename a bien ete execute"
+    Start-Sleep -Seconds 5
+}
+```
+The backup here is made every 5 seconds, but it could be changed, with Start-Sleep, to be faster or slower. 
 
 ## TODO 
-- Add the automation process in the script
 - Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
-- Finish and add the technical documentation
+- Finish and add the technical documentation (lazy)
