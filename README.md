@@ -5,12 +5,20 @@ The script itself is mostly based using this [Quora article](https://www.quora.c
 
 There should be a technical documentation soon (in French sadly) explaning how the script works, if I'm not lazy and if I don't forget. 
 
-Comments in this script are also in French...
+Comments in this script are also in French... Maybe, I'll change them to English who knows...
 
 ## Objectives
 ### Automate a backup of 3 DBs using any programming language and any automation app.
 
-I used PowerShell ~~and Task Scheduler or System Agent~~ We can code the automation directly into the script, so consider this as a 100% PowerShell project hihi -w-. And I'm running XAMPP for MySQL.
+I used PowerShell ~~and Task Scheduler or System Agent.~~ Nope...
+
+For the automation, I've used the "Startup" folder in Windows. Basically, the "Startup" folder will execute the content that is inside the folder, if there is any lol, at every startup. And that's the reason why in this repo, there's a .cmd/batchfile ! Because if you just drag & drop the script into the "Startup", Windows will not execute it, but open it in Notepad for some reason...
+
+It just contain the path of the script :
+```
+PowerShell %USERPROFILE%\Documents\script_backup_labo\141_ScriptBackupSQL\scriptbackup.ps1
+```
+Which, of course, will vary depanding on where you cloned this repo. And also, which OS you're using.
 
 ### The backups should have this name : db_dump_day_month_year_hours_minutes_seconds
 Done. This variable, in the script, generates the name of the backups :
@@ -21,7 +29,7 @@ $BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql"
 ### The backups needs to be happening, at least, every 30 seconds or faster.
 ~~TODO in Task Scheduler or System Agent... Not related to the script but worth writing in here .w.~~
 
-Nope, we can code this in the program itself lol. This is how i did it
+Nope, we can code this in the program itself lol. This is how i did it :
 ```
 while ($true) {
     $BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql" 
@@ -32,6 +40,6 @@ while ($true) {
 ```
 The backup here is made every 5 seconds, but it could be changed, with Start-Sleep, to be faster or slower. 
 
-## TODO 
+## TODO
 - Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
-- Finish and add the technical documentation (lazy)
+- Add the technical documentation (lazy)
