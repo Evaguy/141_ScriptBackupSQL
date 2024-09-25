@@ -41,5 +41,7 @@ while ($true) {
 The backup here is made every 5 seconds, but it could be changed, with Start-Sleep, to be faster or slower. 
 
 ## TODO
-- Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
+- Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable".
+- Translet the comments, in the script, to English
 - Add the technical documentation (lazy)
+- Create a Linux version of the script (supper dupper lazy)
