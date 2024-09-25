@@ -42,6 +42,6 @@ The backup here is made every 5 seconds, but it could be changed, with Start-Sle
 
 ## TODO
 - Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable".
-- Translet the comments, in the script, to English
+- Translet the comments, in the script, into English
 - Add the technical documentation (lazy)
 - Create a Linux version of the script and divide this repo in 2 separates section : Windows and Linux (supper dupper lazy)
