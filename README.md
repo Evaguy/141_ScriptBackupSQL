@@ -41,7 +41,8 @@ while ($true) {
 The backup here is made every 5 seconds, but it could be changed, with Start-Sleep, to be faster or slower. 
 
 ## TODO
-- Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable".
-- Translet the comments, in the script, into English
+- Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
+- Translate the comments, in the script, into English
+- Try adding a way, for the users, to use a XML file or a JSON file, or any other text file, instead of modifing directly the variable in the script. Don't know if it's possible though...
 - Add the technical documentation (lazy)
-- Create a Linux version of the script and divide this repo in 2 separates section : Windows and Linux (supper dupper lazy)
+- Create a Linux version of the script, a.k.a using bash, and divide this repo in 2 separates section : Windows and Linux (supper dupper lazy)
