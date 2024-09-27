@@ -43,6 +43,6 @@ The backup here is made every 5 seconds, but it could be changed, with Start-Sle
 ## TODO
 - Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
 - Translate the comments, in the script, into English
-- Try adding a way, for the users, ~~to use a XML file or a JSON file, or any other text file~~, this will likely be a .ini file, but anyway still looking, instead of modifing directly the variables in the script. Don't know if it's possible though...
+- Try adding a way, for the users, ~~to use a XML file or a JSON file, or any other text file~~, this will likely be a .ini file, but anyway still looking for an option, instead of modifing directly the variables in the script. Don't know if it's possible though...
 - Add the technical documentation (lazy)
 - Create a Linux version of the script, a.k.a using bash, and divide this repo in 2 separates section : Windows and Linux (super duper lazy)
