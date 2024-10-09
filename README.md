@@ -3,9 +3,7 @@ Source code of a project in school/EPSIC for the IT branch 141.
 
 The script itself is mostly based using this [Quora article](https://www.quora.com/How-can-you-backup-MySQL-and-PostgreSQL-databases-from-Windows-Server-2012R2-using-PowerShell-scripts). Also this is the first time I've ever used PowerShell lol :-).
 
-There should be a technical documentation soon (in French sadly) explaning how the script works, if I'm not lazy and if I don't forget. 
-
-Comments in this script are also in French... Maybe, I'll change them to English who knows...
+Comments, in this script, are in French... Maybe, I'll change them to English who knows...
 
 ## Objectives
 ### Automate a backup of 3 DBs using any programming language and any automation app.
@@ -18,7 +16,7 @@ It just contain the path of the script :
 ```
 PowerShell %USERPROFILE%\Documents\script_backup_labo\141_ScriptBackupSQL\scriptbackup.ps1
 ```
-Which, of course, will vary depanding on where you cloned this repo. And also, which OS you're using.
+Which, of course, will vary depanding on where you cloned this repo !
 
 ### The backups should have this name : db_dump_day_month_year_hours_minutes_seconds
 Done. This variable, in the script, generates the name of the backups :
@@ -44,5 +42,4 @@ The backup here is made every 5 seconds, but it could be changed, with Start-Sle
 - Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
 - Translate the comments, in the script, into English
 - Try adding a way, for the users, ~~to use a XML file or a JSON file, or any other text file~~, this will likely be a .ini file, but anyway still looking for an option, instead of modifing directly the variables in the script. Don't know if it's possible though...
-- Add the technical documentation (lazy)
 - Create a Linux version of the script, a.k.a using bash, and divide this repo in 2 separates section : Windows and Linux (super duper lazy)
