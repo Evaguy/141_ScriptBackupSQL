@@ -1,5 +1,5 @@
 # 141_ScriptBackupSQL
-Source code of a project in school/EPSIC for the IT branch 141.
+Source code of a project in school/EPSIC for the ICT branch 141.
 
 The script itself is mostly based using this [Quora article](https://www.quora.com/How-can-you-backup-MySQL-and-PostgreSQL-databases-from-Windows-Server-2012R2-using-PowerShell-scripts). Also this is the first time I've ever used PowerShell lol :-).
 
