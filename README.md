@@ -42,5 +42,4 @@ This loop makes a backup of the DBs, with differents names. Then, it writes a me
 - Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
 - Translate the comments, in the script, into English
 - Try adding a way, for the users, ~~to use a XML file or a JSON file, or any other text file~~, this will likely be a .ini file, but anyway still looking for an option, instead of modifing directly the variables in the script. Don't know if it's possible though...
-- Add error messages depanding on what error mysqldupm returns (exemple : Invalid DBs, DBMS/Host not found, etc...), and then add the differents explanation in the repo (lazy)
-- Create a Linux version of the script, a.k.a using bash, and divide this repo in 2 separates section : Windows and Linux (super duper lazy). Already created the Windows folder, in the repo, and moved the scripts.
+- Create a Linux version of the script, a.k.a using bash, and divide this repo in 2 separates section : Windows and Linux (super duper lazy). Already created the Windows folder and the Linux folder, in the repo, that will contain the different scripts
