@@ -1,8 +1,6 @@
 # 141_ScriptBackupSQL
 Source code of a project in school/EPSIC for the ICT branch 141.
 
-Comments, in this script, are in French... Maybe, I'll change them to English who knows...
-
 ## Objectives
 ### Automate a backup of 3 DBs using any programming language and any automation app.
 
