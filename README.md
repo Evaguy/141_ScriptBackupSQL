@@ -39,8 +39,4 @@ while ($true) {
 This loop makes a backup of the DBs, with differents names. Then, it writes a message, and finally waits 5 seconds before doing another backup. The waiting time can be changed with the Start-Sleep command.  
 
 ## TODO:
-- Remove the pre-existing variable in the scripts
-- Perphaps changing/cleaning the comments so that they're more "readable" and more "understandable"
-- Translate the comments, in the script, into English
-- Try adding a way, for the users, ~~to use a XML file or a JSON file, or any other text file~~, this will likely be a .ini file, but anyway still looking for an option, instead of modifing directly the variables in the script. Don't know if it's possible though...
-- Create a Linux version of the script, a.k.a using bash, and divide this repo in 2 separates section : Windows and Linux (super duper lazy). Already created the Windows folder and the Linux folder, in the repo, that will contain the different scripts
+- Rewrite the entier README
