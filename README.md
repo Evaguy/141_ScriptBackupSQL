@@ -39,4 +39,5 @@ while ($true) {
 This loop makes a backup of the DBs, with differents names. Then, it writes a message, and finally waits 5 seconds before doing another backup. The waiting time can be changed with the Start-Sleep command.  
 
 ## TODO:
+- Try adding a way, for the users, ~~to use a XML file or a JSON file, or any other text file~~, this will likely be a .ini file, but anyway still looking for an option, instead of modifing directly the variables in the script. Don't know if it's possible though...
 - Rewrite the entier README
