@@ -1,7 +1,7 @@
 # variables config
 $BackupFolder = ""
 $mysqldumpPath = ""
-$User = "" # if the user has a psw, add a psw variable !
+$User = "" # if the user has a psw, add the psw variable like below :
 # $PSW = "" 
 
 # config variables dbs
