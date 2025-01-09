@@ -1,35 +1,30 @@
-# config variable
-$BackupFolder = "C:\backups"
-$mysqldumpPath = "C:\xampp\mysql\bin\mysqldump.exe"
-$User = "root"
+# variables config
+$BackupFolder = ""
+$mysqldumpPath = ""
+$User = "" # if the user isn't root, use the variable down there instead !
 
-# si l'utilisateur n'est pas root
-# utilisez ces variables
-# $User = "nom utilisateur"
-# $PSW = "mot de passe" # si l'utilisateur à un mot de passe
+# $User = ""
+# $PSW = "" 
 
-# config variable dbs
-$DB_sakila = "sakila"
-$DB_world = "world"
-$DB_menagerie = "menagerie"
+# config variables dbs
+$DB_1 = ""
+$DB_2 = ""
+$DB_3 = ""
+# if you want to backup more dbs, you'll have to create other variable
+# maybe the idea here would be to find a way to only use one variable :/
 
-# config nom backup 
-# + backup des dbs + automatisation
-# si l'utilisateur est root ou un utilsateur sans mot de passe
+# backup name + dbs backup config if the user doesn't have a password 
 while ($true) {
     $BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql" 
-    & $mysqldumpPath -u $User --databases $DB_sakila $DB_world $DB_menagerie | Out-File "$Backupfolder\$BackupFileName"
-    Write-Host "Le $BackupFilename a bien ete execute"
-    Start-Sleep -Seconds 5
+    & $mysqldumpPath -u $User --databases $DB_1 $DB_2 $DB_3 | Out-File "$Backupfolder\$BackupFileName"
+    Write-Host "The $BackupFilename has been made successfully !"
+    Start-Sleep -Seconds 5 
 }
 
-# config nom backup
-# backup des dbs + automatisation
-# si l'utilisateur n'est pas root
-# et qu'il a un mot de passe
+# backup name + dbs backup config if the user has a password
 # while ($true) {
     # $BackupFileName = "db_dump_" + (Get-Date -Format "dd_MM_yyyy_HH_mm_ss") + ".sql" 
-    # & $mysqldumpPath -u $User --password=$PSW --databases $DB_sakila $DB_world $DB_menagerie | Out-File "$Backupfolder\$BackupFileName"
-    # Write-Host "Le $BackupFilename a bien ete execute"
+    # & $mysqldumpPath -u $User --password=$PSW --databases $DB_1 $DB_2 $DB_3 | Out-File "$Backupfolder\$BackupFileName"
+    # Write-Host "The $BackupFilename has been made successfully !"
     # Start-Sleep -Seconds 5
 # }
